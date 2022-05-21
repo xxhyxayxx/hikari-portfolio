@@ -36,7 +36,7 @@ export default function Home() {
             </div>
         </main>
 
-        <div className={styles.about}>
+        <section className={styles.about}>
             <div>
                 <p className={styles.circle_text}>
                     <span>H</span><span>I</span><span>K</span><span>A</span><span>R</span><span>I</span><span>*</span><span>N</span><span>A</span><span>K</span><span>A</span><span>M</span><span>U</span><span>R</span><span>A</span><span>*</span>
@@ -55,7 +55,35 @@ export default function Home() {
                     <li><FontAwesomeIcon className={styles.about_icon} icon={faTwitter} /></li>
                 </ul>
             </div>
-        </div>
+        </section>
+        <section className={styles.work}>
+            <h2 className={styles.work_title}>Work</h2>
+            <ul className={styles.work_list}>
+                <li>
+                    <dl>
+                        <dt></dt>
+                        <dd>Project Name</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt></dt>
+                        <dd>Project Name</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt></dt>
+                        <dd>Project Name</dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section className={styles.contact}>
+            <h2 className={styles.contact_title}>Contact</h2>
+            <p className={styles.contact_text}>Feel free to reach to me</p>
+            <div className={styles.button}><a href="hn104@student.london.ac.uk">E-mail</a></div>
+        </section>
 
     </div>
   )

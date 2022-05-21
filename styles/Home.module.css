@@ -193,3 +193,74 @@
 .circle_text span:nth-child(16) {
   transform: rotate(337.5deg);
 }
+
+.work{
+  padding: 150px 150px 80px;
+  background-color: hsl(29, 94%, 87%);
+  background-image:
+          radial-gradient(at 50% 50%, hsl(0, 81%, 72%) 0px, transparent 50%);
+}
+
+.work_title{
+  text-align: center;
+  font-size: 6rem;
+  font-weight: normal;
+}
+
+.work_list{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 0;
+}
+
+.work_list li{
+  padding: 20px 80px;
+  border-right: #473A19 1px solid;
+}
+
+.work_list li:last-child{
+  border: none;
+}
+
+.work_list dt{
+  background: #473A19;
+  width: 250px;
+  height: 400px;
+}
+
+.work_list dd{
+  font-size: 1.3rem;
+  padding: 24px 0 0;
+  text-align: center;
+}
+
+.contact{
+  padding: 150px 150px 200px;
+  background-color: hsl(29, 94%, 87%);
+  background-image:
+          radial-gradient(at 90% 98%, hsl(131, 23%, 64%) 0px, transparent 50%),
+          radial-gradient(at 50% 50%, hsl(39, 80%, 72%) 0px, transparent 50%);
+}
+
+.contact_title{
+  text-align: center;
+  font-size: 6rem;
+  font-weight: normal;
+}
+
+.contact_text{
+  padding: 80px 0 0;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.button{
+  text-align: center;
+  margin: 080px auto 0;
+}
+
+.button a{
+  font-size: 1.4rem;
+  border: #473A19 1px solid;
+  padding: 20px 40px;
+}
