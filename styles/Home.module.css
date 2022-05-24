@@ -121,22 +121,22 @@
 
 .circle_text {
   position:relative;
-  width: 400px; /* 直径 */
-  height: 400px; /* 直径 */
+  width: 400px;
+  height: 400px;
   font-size: 3rem;
   text-align: center;
   margin: 0;
-  transform: rotate(-60deg); /* 円の回転 */
+  transform: rotate(-60deg);
 }
 
 .circle_text span {
   position: absolute;
   top: 0;
-  left: calc(50% - 3rem); /* 中心点、、文字サイズ分ずらす */
+  left: calc(50% - 3rem);
   display: inline-block;
-  width: 30px; /* 文字サイズより小さくしない */
-  height: 200px; /* 半径 */
-  transform-origin: center bottom; /* 回転の基準点 */
+  width: 30px;
+  height: 200px;
+  transform-origin: center bottom;
   font-style: normal;
 }
 
@@ -238,16 +238,6 @@
   height: 400px;
   position: relative;
 }
-
-/*.work_list dt img{*/
-/*  opacity: 0.3;*/
-/*  filter: sepia(50%);*/
-/*}*/
-
-/*.work_list dt img:hover{*/
-/*  filter:sepia(0);*/
-/*  opacity: 1;*/
-/*}*/
 
 .work_item{
   font-size: 1.3rem;
