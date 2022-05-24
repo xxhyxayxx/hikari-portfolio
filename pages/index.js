@@ -67,21 +67,21 @@ export default function Home() {
             <ul className={styles.work_list}>
                 <li>
                     <Link href="https://xxhyxayxx.github.io/p5_game_project/dist/"><a target='_blank'><dl>
-                        <dt><Image src="/foodies.png" width={500} height={800} /></dt>
+                        <dt><Image src="/foodies.png" alt="Solo Assignment Foodies" width={500} height={800} /></dt>
                         <dd className={styles.work_item}>Solo Assignment Foodies</dd>
                         <dd className={styles.lang}>Figma/HTML/CSS/JavaScript</dd>
                     </dl></a></Link>
                 </li>
                 <li>
                     <Link href="https://xxhyxayxx.github.io/p5_game_project/dist/"><a target='_blank'><dl>
-                        <dt><Image src="/p5-game.png" alt="" width={250} height={400}/></dt>
+                        <dt><Image src="/p5-game2.png" alt="Solo Assignment P5 Games" width={500} height={800}/></dt>
                         <dd className={styles.work_item}>Solo Assignment P5 Games</dd>
                         <dd className={styles.lang}>webpack/TypeScript/P5.js</dd>
                     </dl></a></Link>
                 </li>
                 <li>
                     <Link href="https://www.behance.net/gallery/68386159/Open-Sushi-Summit"><a target='_blank'><dl>
-                        <dt><Image src="/oss.png" width={500} height={800} /></dt>
+                        <dt><Image src="/oss.png" alt="Event Banner" width={500} height={800} /></dt>
                         <dd className={styles.work_item}>Event Banner</dd>
                         <dd className={styles.lang}>Adobe illustrator/Photoshop</dd>
                     </dl></a></Link>
