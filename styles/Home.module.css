@@ -28,6 +28,7 @@
           radial-gradient(at 18% 17%, hsla(18,81%,75%,1) 0px, transparent 50%);
 }
 
+
 .menu{
   display: flex;
   justify-content: space-between;
@@ -55,6 +56,10 @@
   padding: 0;
 }
 
+.menu_link{
+  cursor: pointer;
+}
+
 .box{
   height: calc(100vh - 123px);
   padding: 0 100px;
@@ -63,8 +68,9 @@
   justify-content: center;
 }
 
+
 .about{
-  padding: 0 150px 80px;
+  padding: 0 150px 180px;
   background-color: hsl(29, 94%, 87%);
   background-image:
   radial-gradient(at 20% 45%, hsl(175, 21%, 64%) 0px, transparent 50%);
@@ -106,6 +112,10 @@
 
 .about_icon{
   width: 40px;
+}
+
+.resume{
+  text-decoration: underline;
 }
 
 
@@ -195,7 +205,7 @@
 }
 
 .work{
-  padding: 150px 150px 80px;
+  padding: 50px 150px 80px;
   background-color: hsl(29, 94%, 87%);
   background-image:
           radial-gradient(at 50% 50%, hsl(0, 81%, 72%) 0px, transparent 50%);
@@ -223,14 +233,32 @@
 }
 
 .work_list dt{
-  background: #473A19;
+  background: #a18872;
   width: 250px;
   height: 400px;
+  position: relative;
 }
 
-.work_list dd{
+/*.work_list dt img{*/
+/*  opacity: 0.3;*/
+/*  filter: sepia(50%);*/
+/*}*/
+
+/*.work_list dt img:hover{*/
+/*  filter:sepia(0);*/
+/*  opacity: 1;*/
+/*}*/
+
+.work_item{
   font-size: 1.3rem;
   padding: 24px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.lang{
+  padding: 8px 0 0;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -263,4 +291,186 @@
   font-size: 1.4rem;
   border: #473A19 1px solid;
   padding: 20px 40px;
+}
+
+.button a:hover{
+  background: #473A19;
+  color: #e5c6a4;
+}
+
+@media only screen and (max-width: 1200px) {
+  .work_list{
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+
+  .work_list li{
+    padding: 20px 80px 32px;
+    margin: 0 0 24px;
+    border-right: none;
+  }
+
+  .circle_text {
+    position:relative;
+    width: 280px; /* 直径 */
+    height: 280px; /* 直径 */
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    transform: rotate(-60deg); /* 円の回転 */
+  }
+
+  .circle_text span {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 3rem); /* 中心点、、文字サイズ分ずらす */
+    display: inline-block;
+    width: 30px; /* 文字サイズより小さくしない */
+    height: 140px; /* 半径 */
+    transform-origin: center bottom; /* 回転の基準点 */
+    font-style: normal;
+  }
+
+  .about{
+    padding: 0 60px 180px;
+  }
+
+  .about_box{
+    padding: 200px 0 0 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    height: 123px;
+    padding: 40px 0px;
+    margin: 0 auto;
+    border-bottom: none;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu_list{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 24px 40px;
+    border-bottom: #473A19 solid 1px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .box{
+    height: calc(100vh - 123px);
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title{
+    font-weight: 1.6;
+    font-size: 4rem;
+  }
+
+  .text{
+    font-size: 1.4rem;
+  }
+
+  .about{
+    padding: 0 32px 80px;
+    background-color: hsl(29, 94%, 87%);
+    background-image: radial-gradient(at 20% 45%, hsl(175, 21%, 64%) 0px, transparent 50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .about_circle{
+    margin: 0 auto;
+  }
+
+  .circle_text{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+    transform: rotate(-60deg);
+  }
+
+  .circle_text span{
+    position: absolute;
+    top: 0;
+    right: calc(50% - 1.4rem);
+    display: inline-block;
+    width: 30px;
+    height: 100px;
+    transform-origin: center bottom;
+    font-style: normal;
+  }
+
+  .about_box{
+    padding: 64px 0 32px;
+  }
+
+  .about_title{
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .work{
+    padding: 0;
+    background-color: hsl(29, 94%, 87%);
+    background-image: radial-gradient(at 50% 50%, hsl(0, 81%, 72%) 0px, transparent 50%);
+  }
+
+  .work_title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+  }
+
+  .work_list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work_list li{
+    padding: 64px 0;
+    border-right: none;
+    border-bottom: #473A19 1px solid;
+  }
+
+  .work_list li:first-child{
+    padding: 0 0 64px;
+  }
+
+  .contact{
+    padding: 64px 0 200px;
+    background-color: hsl(29, 94%, 87%);
+    background-image: radial-gradient(at 90% 98%, hsl(131, 23%, 64%) 0px, transparent 50%), radial-gradient(at 50% 50%, hsl(39, 80%, 72%) 0px, transparent 50%);
+  }
+
+  .contact_title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+  }
+
+  .contact_text{
+    padding: 80px 0 0;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .button{
+    text-align: center;
+    margin: 80px auto 0;
+  }
 }
