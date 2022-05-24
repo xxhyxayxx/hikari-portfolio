@@ -66,7 +66,7 @@ export default function Home() {
             <h2 className={styles.work_title}>Work</h2>
             <ul className={styles.work_list}>
                 <li>
-                    <Link href="https://xxhyxayxx.github.io/p5_game_project/dist/"><a target='_blank'><dl>
+                    <Link href="https://xxhyxayxx.github.io/web_dev_final/"><a target='_blank'><dl>
                         <dt><Image src="/foodies.png" alt="Solo Assignment Foodies" width={500} height={800} /></dt>
                         <dd className={styles.work_item}>Solo Assignment Foodies</dd>
                         <dd className={styles.lang}>Figma/HTML/CSS/JavaScript</dd>
